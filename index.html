@@ -1,39 +1,49 @@
 <!DOCTYPE html>
+<!--Start of HTML File-->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-    <title> Responsive Registration Form</title> <!--Tab Name-->
-    <link rel="stylesheet" href="style.css"> <!--Stylesheet is inserted here-->
+    <!--Tab Name-->
+    <title> Responsive Registration Form</title> 
+    <!--Stylesheet is inserted here-->
+    <link rel="stylesheet" href="style.css"> 
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
   <div class="container">
-    <div class="title">Registration (Video Library Management System):</div> <!--Title of the Registration form-->
+    <!--Title of the Registration form-->
+    <div class="title">Registration (Video Library Management System):</div> 
     <div class="content">
       <form action="#">
         <div class="user-details">
           <div class="input-box">
-            <span class="details">Full Name</span> <!--Section for Full Name-->
+            <!--Section for Full Name-->
+            <span class="details">Full Name</span>
             <input type="text" placeholder="Enter your name" required>
           </div>
           <div class="input-box">
-            <span class="details">Username</span> <!--Section for Username-->
+            <!--Section for Username-->
+            <span class="details">Username</span> 
             <input type="text" placeholder="Enter your username" required>
           </div>
           <div class="input-box">
-            <span class="details">Email</span> <!--Section for Email-->
+            <!--Section for Email-->
+            <span class="details">Email</span> 
             <input type="text" placeholder="Enter your email" required>
           </div>
           <div class="input-box">
-            <span class="details">Phone Number</span> <!--Section for Phone Number-->
+            <!--Section for Phone Number-->
+            <span class="details">Phone Number</span> 
             <input type="text" placeholder="Enter your number" required>
           </div>
           <div class="input-box">
-            <span class="details">Password</span> <!--Section for Password-->
+            <!--Section for Password-->
+            <span class="details">Password</span> 
             <input type="text" placeholder="Enter your password" required>
           </div>
           <div class="input-box">
-            <span class="details">Confirm Password</span> <!--Section for Confirm Password-->
+            <!--Section for Confirm Password-->
+            <span class="details">Confirm Password</span> 
             <input type="text" placeholder="Confirm your password" required>
           </div>
         </div>
@@ -67,11 +77,14 @@
       </form>
       <!--Section for implementing the Popup Functionality-->
       <div class="popup" onclick="myFunction()">Register
+        <!--Section for Popup Message-->
         <span class="popuptext" id="myPopup">Registration Done Successfully!!</span>
       </div>
     </div>
   </div>
 
+<!--Section for Javascript code-->
+<!--Start of Script-->
   <script>
     // When the user clicks on <div>, open the popup
     function myFunction() 
@@ -80,6 +93,8 @@
       popup.classList.toggle("show");
     }
     </script>
-
+<!--End of Script-->
 </body>
 </html>
+
+<!--End of HTML File-->
