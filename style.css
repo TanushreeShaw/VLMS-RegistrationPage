@@ -1,12 +1,17 @@
+/* Importing a New Google Font for the Web Page.*/
 @import
 url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
+*
+{
+  /* will be applicable to the entire webpage */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
 }
-body{
+body
+{
+  /* will be applicable to the Body Section */
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -14,7 +19,9 @@ body{
   padding: 10px;
   background: linear-gradient(135deg, #6e432a, #20190d);
 }
-.container{
+.container
+{
+  /* will be applicable to the container class */
   max-width: 700px;
   width: 100%;
   background-color: #fff;
@@ -22,12 +29,16 @@ body{
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.15);
 }
-.container .title{
+.container .title
+{
+  /* will be applicable to the title class under container class */
   font-size: 25px;
   font-weight: 500;
   position: relative;
 }
-.container .title::before{
+.container .title::before
+{
+  /* will be applicable before filling up user details */
   content: "";
   position: absolute;
   left: 0;
@@ -37,22 +48,30 @@ body{
   border-radius: 5px;
   background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
-.content form .user-details{
+.content form .user-details
+{
+  /* will be applicable after filling up user details */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 20px 0 12px 0;
 }
-form .user-details .input-box{
+form .user-details .input-box
+{
+  /* will be applicable while filling up user details */
   margin-bottom: 15px;
   width: calc(100% / 2 - 20px);
 }
-form .input-box span.details{
+form .input-box span.details
+{
+  /* will be applicable to input-box class of the form */
   display: block;
   font-weight: 500;
   margin-bottom: 5px;
 }
-.user-details .input-box input{
+.user-details .input-box input
+{
+  /* will be applicable to input-box class of the user details class */
   height: 45px;
   width: 100%;
   outline: none;
@@ -64,25 +83,33 @@ form .input-box span.details{
   transition: all 0.3s ease;
 }
 .user-details .input-box input:focus,
-.user-details .input-box input:valid{
+.user-details .input-box input:valid
+{
   border-color: #9b59b6;
 }
- form .gender-details .gender-title{
+ form .gender-details .gender-title
+ {
+  /* will be applicable to gender-details class of the form */
   font-size: 20px;
   font-weight: 500;
  }
- form .category{
+ form .category
+ {
+   /* will be applicable to category class of the form */
    display: flex;
    width: 80%;
    margin: 14px 0 ;
    justify-content: space-between;
  }
- form .category label{
+ form .category label
+ {
    display: flex;
    align-items: center;
    cursor: pointer;
  }
- form .category label .dot{
+ form .category label .dot
+ {
+   /* will be applicable to the dot section of category class of the form */
   height: 18px;
   width: 18px;
   border-radius: 50%;
@@ -93,13 +120,18 @@ form .input-box span.details{
 }
  #dot-1:checked ~ .category label .one,
  #dot-2:checked ~ .category label .two,
- #dot-3:checked ~ .category label .three{
+ #dot-3:checked ~ .category label .three
+ {
+   /* will be applicable to the dot type of the dot section of category class of the form */
    background: #9b59b6;
    border-color: #d9d9d9;
  }
- form input[type="radio"]{
+ form input[type="radio"]
+ {
+   /* will be applicable to the input portion of the form */
    display: none;
  }
+
  /*form .button{
    height: 45px;
    margin: 35px 0
@@ -121,10 +153,14 @@ form .input-box span.details{
   /* transform: scale(0.99); */
   /*background: linear-gradient(-135deg, #6e432a, #20190d);
   }*/
- @media(max-width: 584px){
- .container{
+  
+ @media(max-width: 584px)
+ {
+   /*checking responsiveness of the form*/
+ .container
+  {
   max-width: 100%;
-}
+  }
 form .user-details .input-box{
     margin-bottom: 15px;
     width: 100%;
@@ -149,9 +185,10 @@ form .user-details .input-box{
 }
 
 /*pop-up section*/
-
 /* Popup container */
-.popup {
+.popup 
+{
+  /* styling of popup section*/
   text-align: center;
   position: relative;
   display: center;
@@ -175,7 +212,9 @@ form .user-details .input-box{
 }
 
 /* The actual popup (appears on top) */
-.popup .popuptext {
+.popup .popuptext 
+{
+  /* styling of popup text section*/
   visibility: hidden;
   width: 160px;
   background-color: #555;
@@ -190,8 +229,9 @@ form .user-details .input-box{
   margin-left: -80px;
 }
 
-/* Popup arrow */
-.popup .popuptext::after {
+/* Popup arrow Section*/
+.popup .popuptext::after 
+{
   content: "";
   position: center;
   top: 100%;
@@ -203,19 +243,23 @@ form .user-details .input-box{
 }
 
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
-.popup .show {
+.popup .show 
+{
+  /*showing the popup*/
   visibility: visible;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s
 }
 
 /* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
+@-webkit-keyframes fadeIn 
+{
   from {opacity: 0;}
   to {opacity: 1;}
 }
 
-@keyframes fadeIn {
+@keyframes fadeIn 
+{
   from {opacity: 0;}
   to {opacity:1 ;}
 }
