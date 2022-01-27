@@ -57,12 +57,24 @@
             </label>
           </div>
         </div>
-        <div class="button">
+        <!--<div class="button">
           <input type="submit" value="Register">
-        </div>
+        </div>-->
       </form>
+      <div class="popup" onclick="myFunction()">Register
+        <span class="popuptext" id="myPopup">Registration Done Successfully!!</span>
+      </div>
     </div>
   </div>
+
+  <script>
+    // When the user clicks on <div>, open the popup
+    function myFunction() 
+    {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+    </script>
 
 </body>
 </html>
